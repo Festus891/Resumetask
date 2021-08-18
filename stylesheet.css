@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #111111;
+    color: rgb(28, 10, 50);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h4{
+    font-weight: 600;
+    padding: .3em 0;
+    margin-top: .5em;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+h2{
+    font-size: 1.7rem;
+    text-align: left;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+h4{
+    font-size: 1rem;
+    color: black;
+}
+
+label, p{
+    font-size: 16px;
+}
+
+small{
+    font-size: .7em;
+    color: inherit;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    font-size: .9em;
+    padding: .5em;
+    color: inherit;
+    font-size: 400;
+}
+
+a:hover{
+    color: rgb(50, 13, 184);
+    text-decoration: underline;
+}
+
+header {
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about{
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+}
+
+.about img{
+    width: 15rem;
+    height: 14rem;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.AboutMe{
+    padding: 0em 2em 0em 2em;
+    margin: 0 10px 0 10px;
+}
+
+
+.social-links{
+    width: 30%;
+    /* padding: .5em; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: #00ffff; */
+}
+
+.social-links a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.social-links a:hover{
+    /* transform: translate(0, 5px);
+    transition: all 0.5s; */
+    color: #1cbb29;
+}
+
+.myskills, .education{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 0px;
+}
+
+.myskills{
+    text-align: left;
+}
+
+
+.skill-box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    align-items: left;
+}
+
+.skill-content{
+    display: flex;
+    flex-direction: column ;
+    padding: 1em;
+    align-items: left;
+}
+
+progress {
+    background-color: #fff;
+    border: 2px solid #111111;
+    border-radius: 30px;
+    width: 17rem;
+    margin: .6em 0;
+  }
+  progress::-webkit-progress-bar {
+    background-color: #111111;
+    border: 2px solid #111111;
+    border-radius: 30px;
+    width: 17rem;
+  }
+  progress::-webkit-progress-value {
+    background-color: rgb(221, 124, 169);
+    border: 1px solid #111111;
+    border-radius: 30px;
+    width: 17rem;
+  }
+  progress::-moz-progress-bar {
+    background-color: #111111;
+    border: 2px solid #111111;
+    border-radius: 30px;
+    width: 17rem;
+  }
+
+
+.experience, .ref{
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 2em;
+}
+
+.exp-content, .edu-content{
+    padding: 1em .5em;
+    display: flex;
+    flex-direction: row;
+    
+}
+.edu-content h4{
+    padding: 1em;
+    width: 30%;
+}
+.ex{
+    padding: 2em;
+}
+
+.edu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+@media screen  and (max-width:1000px){
+    .header,  .edu-content, .exp-content, .ref, .about{
+        flex-direction: column;
+    }
+    .social-links{
+        width: 50%;
+    }
+    .about .img{
+        width: 15rem;
+        height: 20rem;
+        margin: auto;
+    }
+    .skill-box{
+        position: relative;
+        left: 0px;
+    }
+    .edu-content h4{
+        width: 100%;
+}
+}
+@media screen  and (max-width:594px){
+    .skill-box{
+        display: grid;
+    }
+}
+
+.ref{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #be5656;
+    height: 50px;
+}
+
+.logos{
+    margin: 0px 70px 0px 100px;
+    padding: 0 20px 0px 0px;
+}
+
+
+.logo1{
+    height: 70%;
+    width: 80%;
+}
+
+.logo2{
+    height: 30%;
+    width: 35%;
+    
+}
+
+.logo3{
+    height: 10%;
+    width: 35%;
+}
